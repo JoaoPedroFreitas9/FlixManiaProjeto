@@ -1,0 +1,116 @@
+.favoritos {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #1e1e1e; /* Fundo escuro */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5; /* Texto claro */
+  }
+  
+  .favoritos h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f5c518; /* Cor vibrante para o título */
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .favoritos ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .favoritos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 12px;
+    background-color: #2a2a2a; /* Fundo dos itens */
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .favoritos li:hover {
+    background-color: #333; /* Realce ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .favoritos span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ddd; /* Cor clara para o texto */
+  }
+  
+  .favoritos .ver-detalhes {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente azul */
+    transition: all 0.3s ease;
+  }
+  
+  .favoritos .ver-detalhes:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+  }
+  
+  .favoritos .excluir {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(45deg, #f43f5e, #e11d48); /* Gradiente vermelho */
+    transition: all 0.3s ease;
+  }
+  
+  .favoritos .excluir:hover {
+    background: linear-gradient(45deg, #e11d48, #f43f5e);
+    transform: translateY(-3px);
+  }
+  
+  .favoritos .voltar-home {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #34d399, #059669); /* Gradiente verde */
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .favoritos .voltar-home:hover {
+    background: linear-gradient(45deg, #059669, #34d399);
+    transform: translateY(-3px);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .favoritos li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .favoritos .ver-detalhes, .favoritos .excluir {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

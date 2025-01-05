@@ -1,0 +1,60 @@
+/* Geral do Header */
+.header {
+  background-color: #121212; /* Fundo escuro */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Define o máximo de largura */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 0 20px; /* Adiciona espaçamento lateral interno */
+  box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+/* Estilo do Logo */
+.header .logo {
+  color: #f5c518; /* Cor que destaca */
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .logo:hover {
+  color: #ffeb3b; /* Cor de destaque no hover */
+  transition: color 0.3s ease;
+}
+
+/* Estilo dos Links de Navegação */
+.header nav .nav-link {
+  color: #ffffff; /* Texto claro */
+  font-size: 1rem;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.header nav .nav-link:hover {
+  color: #f5c518;
+  border-bottom: 2px solid #f5c518; /* Destaque no hover */
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header nav .nav-link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

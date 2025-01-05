@@ -1,0 +1,45 @@
+/* Contêiner centralizado */
+.not-found {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: #f8d7da; /* Fundo em tom vermelho claro */
+    color: #721c24; /* Texto em tom de vermelho escuro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Título principal (404) */
+  .not-found h1 {
+    font-size: 100px; /* Destaca o código 404 */
+    font-weight: bold;
+    margin: 0;
+    color: #721c24; /* Vermelho escuro */
+  }
+  
+  /* Subtítulo (Mensagem de erro) */
+  .not-found h2 {
+    font-size: 24px;
+    margin: 10px 0 20px; /* Espaçamento acima e abaixo */
+  }
+  
+  /* Link para voltar */
+  .not-found a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5c6cb; /* Fundo em tom rosa suave */
+    color: #721c24; /* Texto em vermelho escuro */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efeito hover no link */
+  .not-found a:hover {
+    background-color: #f1b0b7; /* Fundo ligeiramente mais escuro ao passar o mouse */
+  }
+  
