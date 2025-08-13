@@ -64,7 +64,7 @@ Siga os passos abaixo para executar o FlixMania em sua máquina local.
     ```
 2.  Navegue até o diretório do projeto:
     ```bash
-    cd flixmaniaprojeto/FlixManiaProjeto-3ef89e076d0a4ae57d53da50d5b5f6f4f223c5df
+    cd flixmaniaprojeto/FlixManiaProjeto
     ```
 3.  Instale as dependências:
     ```bash
