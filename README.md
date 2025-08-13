@@ -1,6 +1,3 @@
-Claro\! Com base nos arquivos do seu projeto, preparei uma documentação completa no formato `README.md`. Este arquivo explica o que é o FlixMania, quais tecnologias foram usadas, suas funcionalidades e como executá-lo.
-
------
 
 # FlixMania
 
