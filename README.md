@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+Claro\! Com base nos arquivos do seu projeto, preparei uma documentação completa no formato `README.md`. Este arquivo explica o que é o FlixMania, quais tecnologias foram usadas, suas funcionalidades e como executá-lo.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-----
 
-## Available Scripts
+# FlixMania
 
-In the project directory, you can run:
+FlixMania é uma aplicação web desenvolvida em React que funciona como um catálogo de filmes interativo. Nela, os usuários podem explorar os filmes que estão em cartaz, visualizar informações detalhadas sobre cada um, assistir a trailers e gerenciar uma lista pessoal de filmes favoritos.
 
-### `npm start`
+Este projeto foi criado com o objetivo de praticar e demonstrar habilidades em desenvolvimento front-end, utilizando tecnologias modernas para criar uma experiência de usuário fluida e agradável, consumindo dados da API do [The Movie Database (TMDB)](https://www.themoviedb.org/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - **Visualização de Filmes em Cartaz**: A página inicial exibe uma lista de filmes que estão atualmente nos cinemas.
+  - **Detalhes do Filme**: Ao clicar em um filme, o usuário é levado para uma página com informações completas, incluindo sinopse, pôster e avaliação.
+  - **Salvar Filmes Favoritos**: Usuários podem adicionar filmes à sua lista de favoritos, que fica salva localmente no navegador (`localStorage`).
+  - **Gerenciamento de Favoritos**: Uma página dedicada permite visualizar todos os filmes salvos e remover os que não desejar mais.
+  - **Assistir ao Trailer**: Em cada página de detalhes, há um botão que redireciona o usuário para uma busca no YouTube pelo trailer do filme.
+  - **Notificações**: O sistema utiliza `react-toastify` para exibir notificações de feedback, como ao salvar ou remover um filme.
+  - **Página de Erro**: Uma página de erro 404 amigável é exibida para rotas não encontradas.
 
-### `npm test`
+## 🚀 Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O projeto foi construído utilizando as seguintes tecnologias e bibliotecas:
 
-### `npm run build`
+  - **[React](https://reactjs.org/)**: Biblioteca principal para a construção da interface de usuário.
+  - **[React Router DOM](https://reactrouter.com/)**: Para o gerenciamento de rotas e navegação entre as páginas.
+  - **[Axios](https://axios-http.com/)**: Para realizar requisições HTTP à API do TMDB e buscar os dados dos filmes.
+  - **[React Toastify](https://fkhadra.github.io/react-toastify/introduction)**: Para a exibição de notificações elegantes e personalizadas.
+  - **CSS Moderno**: O projeto conta com estilização customizada, incluindo um tema escuro e design responsivo para uma boa experiência em diferentes dispositivos.
+  - **The Movie Database (TMDB) API**: Utilizada como fonte de dados para todos os filmes, incluindo imagens, sinopses e avaliações.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Estrutura do Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O código-fonte está organizado da seguinte forma dentro da pasta `src/`:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src
+├── components/         # Componentes reutilizáveis (ex: Header)
+│   └── Header/
+├── pages/              # Componentes que representam as páginas da aplicação
+│   ├── Erro/
+│   ├── Favoritos/
+│   ├── Filme/
+│   └── Home/
+├── services/           # Configuração de serviços externos (ex: API)
+│   └── api.js
+├── App.js              # Componente raiz da aplicação
+├── index.js            # Ponto de entrada da aplicação React
+└── routes.js           # Definição das rotas de navegação
+```
 
-### `npm run eject`
+## 🎬 Como Executar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Siga os passos abaixo para executar o FlixMania em sua máquina local.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Pré-requisitos**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  - [Node.js](https://nodejs.org/) (versão 14 ou superior)
+  - Gerenciador de pacotes [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+  - Uma chave de API do [The Movie Database (TMDB)](https://www.themoviedb.org/documentation/api).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Instalação**
 
-## Learn More
+1.  Clone este repositório:
+    ```bash
+    git clone https://github.com/joaopedrofreitas9/flixmaniaprojeto.git
+    ```
+2.  Navegue até o diretório do projeto:
+    ```bash
+    cd flixmaniaprojeto/FlixManiaProjeto-3ef89e076d0a4ae57d53da50d5b5f6f4f223c5df
+    ```
+3.  Instale as dependências:
+    ```bash
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
